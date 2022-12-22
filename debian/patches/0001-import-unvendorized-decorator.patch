@@ -1,0 +1,36 @@
+From: Federico Ceratto <federico@debian.org>
+Date: Tue, 3 Jan 2017 21:30:13 +0000
+Updated: Sun, 27 Dec 2020 20:42:08 +0000
+Subject: Use packaged decorator.py
+Forwarded: not-needed
+
+---
+--- a/prometheus_client/context_managers.py
++++ b/prometheus_client/context_managers.py
+@@ -2,7 +2,7 @@
+ 
+ from timeit import default_timer
+ 
+-from .decorator import decorate
++from decorator import decorate
+ 
+ 
+ class ExceptionCounter(object):
+--- a/tests/test_core.py
++++ b/tests/test_core.py
+@@ -11,7 +11,14 @@
+     HistogramMetricFamily, Info, InfoMetricFamily, Metric, Sample,
+     StateSetMetricFamily, Summary, SummaryMetricFamily, UntypedMetricFamily,
+ )
+-from prometheus_client.decorator import getargspec
++from inspect import getfullargspec
++
++
++def getargspec(f):
++    """A replacement for inspect.getargspec"""
++    spec = getfullargspec(f)
++    return spec.args, spec.varargs, spec.varkw, spec.defaults
++
+ 
+ try:
+     import unittest2 as unittest

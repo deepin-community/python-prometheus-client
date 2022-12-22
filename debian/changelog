@@ -1,0 +1,96 @@
+python-prometheus-client (0.9.0-1) unstable; urgency=medium
+
+  * New upstream release. Closes: #976941
+  * Update compat level to 13.
+  * Add Rules-Requires-Root: no.
+  * Update patch to use packaged python3-decorator.
+  * Update watchfile version.
+
+ -- Martina Ferrari <tina@debian.org>  Sun, 27 Dec 2020 21:07:49 +0000
+
+python-prometheus-client (0.7.1-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * drop python2 support; Closes: #938047
+
+ -- Sandro Tosi <morph@debian.org>  Sat, 16 Nov 2019 19:29:30 -0500
+
+python-prometheus-client (0.7.1-1) unstable; urgency=medium
+
+  [ Martina Ferrari ]
+  * New upstream release. Closes: #944220
+  * Automated cme fixes.
+  * Update my name.
+
+ -- Martina Ferrari <tina@debian.org>  Thu, 07 Nov 2019 12:24:12 +0000
+
+python-prometheus-client (0.6.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Martina Ferrari <tina@debian.org>  Fri, 01 Mar 2019 16:39:22 +0000
+
+python-prometheus-client (0.5.0+1-1) unstable; urgency=medium
+
+  * New upstream release. Including one commit ahead of the release, since it
+    solves a memory leak.
+  * Update Standards-Version with no changes.
+  * Refresh patches.
+  * Add new test dependencies.
+
+ -- Martina Ferrari <tina@debian.org>  Thu, 27 Dec 2018 10:33:38 +0000
+
+python-prometheus-client (0.3.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update gbp.conf for new repo layout.
+  * Update Vcs location to salsa.
+  * Automated cme fixes.
+  * Refresh patches.
+
+ -- Martina Ferrari <tina@debian.org>  Fri, 27 Jul 2018 17:33:07 +0000
+
+python-prometheus-client (0.1.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version and compat.
+
+ -- Martina Ferrari <tina@debian.org>  Thu, 08 Feb 2018 19:22:17 +0000
+
+python-prometheus-client (0.0.20-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Martina Ferrari <tina@debian.org>  Sun, 30 Jul 2017 13:36:36 +0000
+
+python-prometheus-client (0.0.19-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/watch: Fix a bug in filenamemangle, and make it more
+    resilient.
+  * debian/control: Update Standards-Version with no changes.
+
+ -- Martina Ferrari <tina@debian.org>  Fri, 23 Jun 2017 17:43:08 +0000
+
+python-prometheus-client (0.0.18-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Federico Ceratto <federico@debian.org>  Tue, 03 Jan 2017 22:02:23 +0000
+
+python-prometheus-client (0.0.14-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    - Use https for Vcs-Git.
+    - Update Standards-Version with no changes.
+    - Add myself to Uploaders.
+
+ -- Martina Ferrari <tina@debian.org>  Mon, 25 Jul 2016 14:41:56 +0000
+
+python-prometheus-client (0.0.13-1) unstable; urgency=low
+
+  [ Christopher Baines ]
+  * Initial release (Closes: #808818)
+
+ -- Federico Ceratto <federico@debian.org>  Fri, 01 Jan 2016 21:17:32 +0000
